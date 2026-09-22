@@ -1,0 +1,190 @@
+/*============================
+CONFIGURAÇÕES GERAIS
+===========================*/
+
+*{
+box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #a8f7fe;
+
+    color: rgb(11, 11, 11);
+}
+/*========================
+   CONTAINER
+=======================*/
+
+.container{
+    width: 90%;
+
+    max-width: 500px;
+
+    margin: 40px auto;
+}
+
+/*============================
+ cabeçalho
+ ======================*/
+
+ header{
+    text-align: center;
+
+    margin-bottom: 30px;
+ }
+
+ header h1 {
+    margin-bottom: 8px;
+ }
+
+ header p{
+    color:blue
+ }
+/*==================
+ CARD
+ ===============*/
+ .card{
+    background:#fff;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px white;
+ }
+/*====================================
+    Campo
+=====================================*/
+ 
+.campo{
+    display: flex;
+ 
+    flex-direction: column;
+ 
+    margin-bottom: 15px;
+ 
+    gap: 6px;
+}
+ 
+.campo label{
+ font-weight: bold;
+}
+ 
+.campo input{
+ 
+    padding: 12px;
+ 
+    border: 1px solid gray;
+ 
+    border-radius: 70px;
+ 
+    font-size: 16px;
+}
+
+ /*=========================
+ BOTOES
+ =================*/
+
+ .botoes{
+    display: flex;
+    gap: 10px;
+ }
+
+ button{
+    border: none;
+    border-radius: 7px;
+    padding: 10px 20px;
+    background: blue;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+ }
+
+ button:hover{
+    opacity: 0.9;
+ }
+
+ .cancelar{
+     background: gray;
+ }
+
+  /*=========================
+ LISTA
+ =================*/
+.lista-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+#contador{
+    color:gray;
+}
+
+  /*=========================
+ALUNO
+ =================*/
+
+ .aluno{
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+ }
+
+ .aluno h3{
+    margin-top: 0;
+    margin-bottom: 8px;
+ }
+
+ .aluno p{
+    margin: 5px 0;
+    color: gray;
+ }
+
+   /*=========================
+ botoes alunos
+ =================*/
+
+ .acoes{
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+ }
+
+ .editar{
+    background: orange;
+ }
+
+ .excluir{
+    background: red;
+ }
+
+    /*=========================
+ responsividade
+ =================*/
+@media(max-width: 600px){
+    .container{
+        width: 94%;
+        margin: 20px auto;
+    }
+    .lista-header{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    .botoes{
+        flex-direction: column;
+    }
+    .acoes{
+        flex-direction: column;
+    }
+}
+
+

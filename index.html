@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>CRUD de Alunos</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+</head>
+         
+        <!-- ==========================================
+             FORMULÁRIO
+        =========================================== -->
+
+        <section class="card">
+            <h2 id="formTitle">
+                Cadastrar Aluno
+            </h2>
+
+            <form id="alunoForm">
+
+                <!-- ID escondido utilizado na edição -->
+                <input
+                  type="hidden"
+                  id="alunoId"
+
+                >
+                <div class="campo">
+                    <label for="nome">
+                      Nome
+                    </label>
+ 
+                    <input
+                      type="text"
+                      id="nome"
+                      placeholder="digite o nome"
+                      required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="email">
+                        E-mail
+                    </label>
+
+                    <input
+                    type="email"
+                    id="email"
+                    placeholder="digite o email"
+                    required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="idade">
+                        Idade
+                    </label>
+
+                    <input
+                    type="number"
+                    id="idade"
+                    placeholder="digite a idade"
+                    min="1"
+                    required
+                    >
+                </div>
+
+                <div class="botoes">
+                    <button type="submit" id="submitButton">
+                        Cadastrar
+                    </button>
+                    <button type="button" id="cancelButton" class="cancelar" hidden>
+                        Cancelar
+                    </button>
+                </div>
+
+                
+
+
+
+ 
+            </form>
+
+        </section>
+
+         
+        <!-- ==========================================
+             LISTA DE ALUNOS
+        =========================================== -->
+
+        <section class="card">
+
+            <div class="lista-header">
+                <h2>
+                    Alunos cadastrados
+                </h2>
+ 
+                <span id="contador">
+                    0 alunos
+                </span>
+ 
+            </div>
+ 
+ 
+            <div id="listaAlunos">
+ 
+ 
+ 
+            </div>
+ 
+        </section>
+
+    </main>
+    
+    <script
+    type="module"
+    src="js/app.js"
+    ></script>
+
+</body>
+</html>
